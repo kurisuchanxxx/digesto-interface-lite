@@ -39,6 +39,27 @@ export const content: ContentSchema = {
       "Nessun messaggio ancora. Chiedi a Digesto AI di sintetizzare un contratto o suggerire i documenti da preparare.",
     errorNetwork: "Errore di rete/CORS. Verifica endpoint e permessi.",
   },
+  lite: {
+    heroTitle: "DigestoAI",
+    heroSubtitle:
+      "Il tuo assistente intelligente per risposte rapide e approfondimenti",
+    promptPlaceholder: "Chiedi qualcosa a DigestoAI…",
+    quickActionsTitle: "Suggerimenti rapidi",
+    quickPrompts: [
+      { label: "Come funziona DigestoAI?", prompt: "Come funziona DigestoAI?" },
+      { label: "Riassumi un articolo", prompt: "Riassumi un articolo" },
+      { label: "Genera idee", prompt: "Genera idee per un'iniziativa legale" },
+      {
+        label: "Rispondi a una domanda",
+        prompt: "Rispondi a una domanda sui contratti di fornitura",
+      },
+    ],
+    historyTitle: "Cronologia conversazioni",
+    historyEmpty:
+      "Le chat salvate compariranno qui con titolo e numero di messaggi.",
+    newConversationLabel: "Nuova conversazione",
+    badgeLabel: "Modalità demo",
+  },
   workflows: {
     kicker: "Flussi intelligenti",
     title: "Orchestra procedure e pareri in un'unica dashboard",

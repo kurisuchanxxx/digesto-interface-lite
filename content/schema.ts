@@ -104,6 +104,23 @@ export interface FooterContent {
   };
 }
 
+export interface LiteQuickPrompt {
+  label: string;
+  prompt: string;
+}
+
+export interface LiteContent {
+  heroTitle: string;
+  heroSubtitle: string;
+  promptPlaceholder: string;
+  quickActionsTitle: string;
+  quickPrompts: LiteQuickPrompt[];
+  historyTitle: string;
+  historyEmpty: string;
+  newConversationLabel: string;
+  badgeLabel: string;
+}
+
 export interface ContentSchema {
   brandName: string;
   siteTitle: string;
@@ -111,6 +128,7 @@ export interface ContentSchema {
   navigation: NavigationContent;
   hero: HeroContent;
   chat: ChatContent;
+  lite: LiteContent;
   workflows: WorkflowsContent;
   features: FeaturesContent;
   testimonials: TestimonialsContent;
