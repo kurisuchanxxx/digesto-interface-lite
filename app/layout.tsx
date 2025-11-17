@@ -3,9 +3,6 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
-import Header from "@/components/ui/header";
-import content from "@/content/digesto-ai";
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -45,14 +42,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" data-brand={content.brandName}>
-      <body
-        className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
-      >
-        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <Header />
-          {children}
-        </div>
+    <html lang="it">
+      <body className={`${inter.variable} ${nacelle.variable} font-inter antialiased`}>
+        {children}
       </body>
     </html>
   );
